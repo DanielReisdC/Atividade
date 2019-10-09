@@ -7,8 +7,7 @@ class BancoDeDados {
     getAlunos () {
         return this.alunos;
     }
-
-     getAlunosPorId (id) {
+    getAlunosPorId (id) {
         
     }
     addAluno (aluno) {
@@ -17,6 +16,8 @@ class BancoDeDados {
 
     getProfessores () {
         return this.professores;
+    }
+    geProfessoresPorId (id) {
     }
 
     addProfessores (professor) {
