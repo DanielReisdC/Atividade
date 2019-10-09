@@ -26,6 +26,10 @@ app.post('/alunos', (req, res) => {
 app.get('/professores', (req, res) => {
     res.json(bd.getProfessores());
 });
+app.get('/professores/:id', (req, res) => {
+    const idProfessor = req.params.id;
+    res.json(bd.getAlunoPorId(idprofessor));
+});
 
 app.post('/professores', (req, res) => {
     bd.addProfessor(req.body);
@@ -33,3 +37,4 @@ app.post('/professores', (req, res) => {
 });
 
 app.listen(3000, () => console.log('Servidor online na porta 3000'));
+
